@@ -5,7 +5,7 @@ if [ ! -f "$2/Rakudo202002.tar.gz" ]; then
   fi
   cd $2
   wget https://rakudo.org/dl/rakudo/rakudo-moar-2020.02.1-01-linux-x86_64.tar.gz
-  mv rakudo/rakudo-moar-2020.02.1-01-linux-x86_64.tar.gz Rakudo202002.tar.gz
+  mv rakudo-moar-2020.02.1-01-linux-x86_64.tar.gz Rakudo202002.tar.gz
 fi
 cd $1
 mkdir -p vendor/rakudo
