@@ -13,3 +13,4 @@ tar -C vendor -zxf $2/Rakudo202002.tar.gz
 cd vendor
 mv rakudo-2020.02.1 rakudo
 cd ..
+vendor/rakudo/share/perl6/site/bin/zef intall --/test cro
