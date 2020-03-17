@@ -1,11 +1,4 @@
 #!/usr/bin/env bash
-if [ ! -f "$2/Rakudo201705.tgz" ]; then
-  if [ ! -d "$2" ]; then
-    mkdir -p $2
-  fi
-  cd $2
-  wget https://vschawathe.gitlab.io/Heroku-Rakudo/Rakudo201705.tgz
-fi
-cd $1
-mkdir -p vendor/rakudo
-tar -C vendor/rakudo -xf $2/Rakudo201705.tgz
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 379CE192D401AB61
+echo "deb https://dl.bintray.com/nxadm/rakudo-pkg-debs `lsb_release -cs` main" | sudo tee -a /etc/apt/sources.list.d/rakudo-pkg.list
+sudo apt-get update && sudo apt-get install rakudo-pkg
