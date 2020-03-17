@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-if [ ! -f "$2/Rakudo201705.tgz" ]; then
+if [ ! -f "$2/Rakudo202002.tar.gz" ]; then
   if [ ! -d "$2" ]; then
     mkdir -p $2
   fi
   cd $2
-  wget https://vschawathe.gitlab.io/Heroku-Rakudo/Rakudo201705.tgz
+  wget https://rakudo.org/dl/rakudo/rakudo-moar-2020.02.1-01-linux-x86_64.tar.gz
+  mv rakudo/rakudo-moar-2020.02.1-01-linux-x86_64.tar.gz Rakudo202002.tar.gz
 fi
 cd $1
 mkdir -p vendor/rakudo
-tar -C vendor/rakudo -xf $2/Rakudo201705.tgz
+tar -C vendor/rakudo -zxf $2/Rakudo202002.tar.gz
