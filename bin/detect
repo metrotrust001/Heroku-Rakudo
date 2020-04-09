@@ -5,6 +5,7 @@ echo "export LD_LIBRARY_PATH=\"\$LD_LIBRARY_PATH:/app/vendor/rakudo/lib\";" > .p
 echo "export PATH=\"\$PATH:\$HOME/vendor/rakudo/bin\";" >> .profile.d/mybuildpack-defaults.sh
 echo "export PATH=\"\$PATH:\$HOME/vendor/rakudo/languages/perl6/site/bin\";" >> .profile.d/mybuildpack-defaults.sh
 echo "export PATH=\"\$PATH:\$HOME/vendor/rakudo/share/perl6/site/bin\";" >> .profile.d/mybuildpack-defaults.sh
-echo "Rakudo PERL6"
+zef install --/test cro
+echo "Rakudo PERL6 :)"
 sleep 5s
 exit 0
