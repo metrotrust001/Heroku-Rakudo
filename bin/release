@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+zef
+sleep 5s
 echo "---"
 echo "addons:"
 echo "config_vars:"

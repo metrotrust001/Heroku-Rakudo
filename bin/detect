@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-zef
-sleep 5s
 cd $1
 mkdir .profile.d
 echo "export LD_LIBRARY_PATH=\"\$LD_LIBRARY_PATH:/app/vendor/rakudo/lib\";" > .profile.d/mybuildpack-defaults.sh
