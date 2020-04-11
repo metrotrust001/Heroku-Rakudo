@@ -14,8 +14,6 @@ cd vendor
 mv rakudo-2020.02.1 rakudo
 cd ..
 #./vendor/rakudo/share/perl6/site/bin/zef
-apt-get update
-apt-get install openssl-dev
 apt-get install openssl
-apt list
+apt list | grep ssl
 whoami
