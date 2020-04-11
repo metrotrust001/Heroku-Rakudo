@@ -14,10 +14,10 @@ cd vendor
 mv rakudo-2020.02.1 rakudo
 cd ..
 #./vendor/rakudo/share/perl6/site/bin/zef
-#apt-get install openssl
-#apt-get install build-essential
-#apt-get install gcc
-#apt-get install g++
-#apt-get install pswebrequest
-#apt-get install curl
-apt list #| grep ssl
+apt-get install openssl
+apt-get install build-essential
+apt-get install gcc
+apt-get install g++
+apt-get install pswebrequest
+apt-get install curl
+apt list | grep ssl
